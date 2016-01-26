@@ -26,6 +26,21 @@ func generateArray() -> [Int?] {
 // Write code that counts the number of nil values in array1
 let array1 = generateArray()
 
+//declare and initialize countNil to zero
+var countNil: Int = 0;
+
+for n in array1 {
+    //I don't think I actually needed to unwrap to find nils, but did so for consistency
+    if let n = n {
+        
+    } else {
+        ++countNil
+    }
+}
+
+//the number of nils in the array
+countNil
+
 
 // Question 2: Mean
 //
@@ -34,6 +49,24 @@ let array1 = generateArray()
 // directly under the declaration of array2
 let array2 = generateArray()
 
+//declare and initialize variables needed to calculate mean as floats to avoid integer math
+var mean: Float = 0
+var sum: Float = 0
+var count: Float = 0
+
+for n in array2 {
+    //unwrap, increment count and add the value to sum
+    if let n = n {
+        sum += Float(n)
+        ++count
+    }
+}
+
+//calculate mean
+mean = sum / count
+
+//mean
+mean
 
 // Question 3: New Array
 //
@@ -41,6 +74,19 @@ let array2 = generateArray()
 // as array3, except without the nil values. The elements in nilFree should be
 // Ints, not Int optionals
 let array3 = generateArray()
+
+//initialize nilFree array of plain ints
+var nilFree = [Int]()
+
+for n in array3 {
+    //unwrap and add values to nilFree array
+    if let n = n {
+        nilFree.append(n)
+    }
+}
+
+//array of non-nils as normal ints
+nilFree
 
 
 // Question 4: Sort array
@@ -53,3 +99,30 @@ let array3 = generateArray()
 //
 // Note that array4 is declared with var, so that it is a mutable array.
 var array4 = generateArray()
+//declare min as int to hold the index of the lowest value
+var min: Int
+
+//loop from through array from first until 2nd to last position
+for var i = 0; i < array4.count - 1; i++ {
+    //set min index to index from the loop
+    min = i
+    //loop through the remainder of the array to find the lowest value
+    for var j = i + 1; j < array4.count; j++ {
+        //if the value is lower than current min, replace the min
+        if array4[j] < array4[min] {
+            min = j
+        }
+    }
+    //if min isn't i (where we started), swap values
+    if min != i {
+        var tmp = array4[i];
+        array4[i] = array4[min];
+        array4[min] = tmp;
+    }
+}
+
+//original array, sorted
+array4
+
+//sort is ascending and puts nils first, matching a standard array.sort implementation for swift
+
