@@ -16,4 +16,28 @@ class BlueViewController : UIViewController {
     @IBAction func returnToOrangeController() {
         dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        print("Blue. viewWillAppear.")
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        print("Blue. viewDidAppear.")
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        print("Blue. viewWillDisappear.")
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        print("Blue. viewDidDisappear.")
+    }
 }
