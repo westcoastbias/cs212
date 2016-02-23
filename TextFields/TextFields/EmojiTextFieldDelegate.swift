@@ -38,9 +38,8 @@ class EmojiTextFieldDelegate : NSObject, UITextFieldDelegate {
         // and an emoji to replace it with
         
         for (emojiString, emoji) in translations {
-        
             // Search for all occurances of key (ie. "dog"), and replace with emoji (ie. 🐶)
-            repeat {
+            do {
                 emojiStringRange = newText.rangeOfString(emojiString, options: NSStringCompareOptions.CaseInsensitiveSearch)
             
                 // found one
@@ -49,7 +48,7 @@ class EmojiTextFieldDelegate : NSObject, UITextFieldDelegate {
                     replacedAnEmoji = true
                 }
                 
-            } while emojiStringRange.location != NSNotFound
+            } while (emojiStringRange.location != NSNotFound)
         }
 
         // If we have replaced an emoji, then we directly edit the text field

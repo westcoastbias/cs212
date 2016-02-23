@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4F63A6E1C794ABC0098EB8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F63A6D1C794ABC0098EB8A /* AppDelegate.swift */; };
+		D4F63A701C794ABC0098EB8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F63A6F1C794ABC0098EB8A /* ViewController.swift */; };
+		D4F63A731C794ABC0098EB8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4F63A711C794ABC0098EB8A /* Main.storyboard */; };
+		D4F63A751C794ABC0098EB8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4F63A741C794ABC0098EB8A /* Images.xcassets */; };
+		D4F63A781C794ABC0098EB8A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4F63A761C794ABC0098EB8A /* LaunchScreen.xib */; };
+		D4F63A841C794ABC0098EB8A /* cs212_assignment5_threeTextFieldsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F63A831C794ABC0098EB8A /* cs212_assignment5_threeTextFieldsTests.swift */; };
+		D4F63A8E1C794DCE0098EB8A /* FiveLimitTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F63A8D1C794DCE0098EB8A /* FiveLimitTextFieldDelegate.swift */; };
+		D4F63A901C794ECA0098EB8A /* DollarFormatTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F63A8F1C794ECA0098EB8A /* DollarFormatTextFieldDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4F63A7E1C794ABC0098EB8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4F63A601C794ABC0098EB8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4F63A671C794ABC0098EB8A;
+			remoteInfo = cs212_assignment5_threeTextFields;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4F63A681C794ABC0098EB8A /* cs212_assignment5_threeTextFields.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cs212_assignment5_threeTextFields.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F63A6C1C794ABC0098EB8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4F63A6D1C794ABC0098EB8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D4F63A6F1C794ABC0098EB8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D4F63A721C794ABC0098EB8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4F63A741C794ABC0098EB8A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4F63A771C794ABC0098EB8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D4F63A7D1C794ABC0098EB8A /* cs212_assignment5_threeTextFieldsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cs212_assignment5_threeTextFieldsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F63A821C794ABC0098EB8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4F63A831C794ABC0098EB8A /* cs212_assignment5_threeTextFieldsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cs212_assignment5_threeTextFieldsTests.swift; sourceTree = "<group>"; };
+		D4F63A8D1C794DCE0098EB8A /* FiveLimitTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveLimitTextFieldDelegate.swift; sourceTree = "<group>"; };
+		D4F63A8F1C794ECA0098EB8A /* DollarFormatTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DollarFormatTextFieldDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4F63A651C794ABC0098EB8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4F63A7A1C794ABC0098EB8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4F63A5F1C794ABC0098EB8A = {
+			isa = PBXGroup;
+			children = (
+				D4F63A6A1C794ABC0098EB8A /* cs212_assignment5_threeTextFields */,
+				D4F63A801C794ABC0098EB8A /* cs212_assignment5_threeTextFieldsTests */,
+				D4F63A691C794ABC0098EB8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4F63A691C794ABC0098EB8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4F63A681C794ABC0098EB8A /* cs212_assignment5_threeTextFields.app */,
+				D4F63A7D1C794ABC0098EB8A /* cs212_assignment5_threeTextFieldsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4F63A6A1C794ABC0098EB8A /* cs212_assignment5_threeTextFields */ = {
+			isa = PBXGroup;
+			children = (
+				D4F63A6D1C794ABC0098EB8A /* AppDelegate.swift */,
+				D4F63A6F1C794ABC0098EB8A /* ViewController.swift */,
+				D4F63A8D1C794DCE0098EB8A /* FiveLimitTextFieldDelegate.swift */,
+				D4F63A8F1C794ECA0098EB8A /* DollarFormatTextFieldDelegate.swift */,
+				D4F63A711C794ABC0098EB8A /* Main.storyboard */,
+				D4F63A741C794ABC0098EB8A /* Images.xcassets */,
+				D4F63A761C794ABC0098EB8A /* LaunchScreen.xib */,
+				D4F63A6B1C794ABC0098EB8A /* Supporting Files */,
+			);
+			path = cs212_assignment5_threeTextFields;
+			sourceTree = "<group>";
+		};
+		D4F63A6B1C794ABC0098EB8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4F63A6C1C794ABC0098EB8A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4F63A801C794ABC0098EB8A /* cs212_assignment5_threeTextFieldsTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4F63A831C794ABC0098EB8A /* cs212_assignment5_threeTextFieldsTests.swift */,
+				D4F63A811C794ABC0098EB8A /* Supporting Files */,
+			);
+			path = cs212_assignment5_threeTextFieldsTests;
+			sourceTree = "<group>";
+		};
+		D4F63A811C794ABC0098EB8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4F63A821C794ABC0098EB8A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4F63A671C794ABC0098EB8A /* cs212_assignment5_threeTextFields */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4F63A871C794ABC0098EB8A /* Build configuration list for PBXNativeTarget "cs212_assignment5_threeTextFields" */;
+			buildPhases = (
+				D4F63A641C794ABC0098EB8A /* Sources */,
+				D4F63A651C794ABC0098EB8A /* Frameworks */,
+				D4F63A661C794ABC0098EB8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cs212_assignment5_threeTextFields;
+			productName = cs212_assignment5_threeTextFields;
+			productReference = D4F63A681C794ABC0098EB8A /* cs212_assignment5_threeTextFields.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4F63A7C1C794ABC0098EB8A /* cs212_assignment5_threeTextFieldsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4F63A8A1C794ABC0098EB8A /* Build configuration list for PBXNativeTarget "cs212_assignment5_threeTextFieldsTests" */;
+			buildPhases = (
+				D4F63A791C794ABC0098EB8A /* Sources */,
+				D4F63A7A1C794ABC0098EB8A /* Frameworks */,
+				D4F63A7B1C794ABC0098EB8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4F63A7F1C794ABC0098EB8A /* PBXTargetDependency */,
+			);
+			name = cs212_assignment5_threeTextFieldsTests;
+			productName = cs212_assignment5_threeTextFieldsTests;
+			productReference = D4F63A7D1C794ABC0098EB8A /* cs212_assignment5_threeTextFieldsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4F63A601C794ABC0098EB8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Lucas Ruprecht";
+				TargetAttributes = {
+					D4F63A671C794ABC0098EB8A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D4F63A7C1C794ABC0098EB8A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D4F63A671C794ABC0098EB8A;
+					};
+				};
+			};
+			buildConfigurationList = D4F63A631C794ABC0098EB8A /* Build configuration list for PBXProject "cs212_assignment5_threeTextFields" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4F63A5F1C794ABC0098EB8A;
+			productRefGroup = D4F63A691C794ABC0098EB8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4F63A671C794ABC0098EB8A /* cs212_assignment5_threeTextFields */,
+				D4F63A7C1C794ABC0098EB8A /* cs212_assignment5_threeTextFieldsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4F63A661C794ABC0098EB8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F63A731C794ABC0098EB8A /* Main.storyboard in Resources */,
+				D4F63A781C794ABC0098EB8A /* LaunchScreen.xib in Resources */,
+				D4F63A751C794ABC0098EB8A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4F63A7B1C794ABC0098EB8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4F63A641C794ABC0098EB8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F63A8E1C794DCE0098EB8A /* FiveLimitTextFieldDelegate.swift in Sources */,
+				D4F63A901C794ECA0098EB8A /* DollarFormatTextFieldDelegate.swift in Sources */,
+				D4F63A701C794ABC0098EB8A /* ViewController.swift in Sources */,
+				D4F63A6E1C794ABC0098EB8A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4F63A791C794ABC0098EB8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F63A841C794ABC0098EB8A /* cs212_assignment5_threeTextFieldsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4F63A7F1C794ABC0098EB8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4F63A671C794ABC0098EB8A /* cs212_assignment5_threeTextFields */;
+			targetProxy = D4F63A7E1C794ABC0098EB8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4F63A711C794ABC0098EB8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4F63A721C794ABC0098EB8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D4F63A761C794ABC0098EB8A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4F63A771C794ABC0098EB8A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4F63A851C794ABC0098EB8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4F63A861C794ABC0098EB8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4F63A881C794ABC0098EB8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = cs212_assignment5_threeTextFields/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D4F63A891C794ABC0098EB8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = cs212_assignment5_threeTextFields/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D4F63A8B1C794ABC0098EB8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = cs212_assignment5_threeTextFieldsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cs212_assignment5_threeTextFields.app/cs212_assignment5_threeTextFields";
+			};
+			name = Debug;
+		};
+		D4F63A8C1C794ABC0098EB8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = cs212_assignment5_threeTextFieldsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cs212_assignment5_threeTextFields.app/cs212_assignment5_threeTextFields";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4F63A631C794ABC0098EB8A /* Build configuration list for PBXProject "cs212_assignment5_threeTextFields" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4F63A851C794ABC0098EB8A /* Debug */,
+				D4F63A861C794ABC0098EB8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4F63A871C794ABC0098EB8A /* Build configuration list for PBXNativeTarget "cs212_assignment5_threeTextFields" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4F63A881C794ABC0098EB8A /* Debug */,
+				D4F63A891C794ABC0098EB8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4F63A8A1C794ABC0098EB8A /* Build configuration list for PBXNativeTarget "cs212_assignment5_threeTextFieldsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4F63A8B1C794ABC0098EB8A /* Debug */,
+				D4F63A8C1C794ABC0098EB8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4F63A601C794ABC0098EB8A /* Project object */;
+}
