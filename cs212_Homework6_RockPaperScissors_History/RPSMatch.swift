@@ -9,5 +9,8 @@
 import UIKit
 
 class RPSMatch: NSObject {
-
+    var value: String!
+    init(string: String) {
+        self.value = string
+    }
 }

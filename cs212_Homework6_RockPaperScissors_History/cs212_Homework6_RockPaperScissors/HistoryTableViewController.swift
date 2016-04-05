@@ -10,9 +10,10 @@ import UIKit
 
 class HistoryTableViewController: UITableViewController {
 
+    var matches = [RPSMatch]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.registerClass(HistoryTableViewCell.self, forCellReuseIdentifier: "HistoryTableViewCell")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -20,21 +21,25 @@ class HistoryTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return matches.count
+        //return 1
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("HistoryTableViewCell", forIndexPath: indexPath) as! HistoryTableViewCell
+//        let historyCell = cell as! HistoryTableViewCell
+        let matchLabelText = matches[indexPath.row].value
+        cell.matchLabel.text = matchLabelText
+        
+        return cell
     }
 
     /*
