@@ -26,9 +26,7 @@ class ColorTableViewController: UITableViewController {
         "Cyan" : UIColor.cyanColor()
     ]
     
-    lazy var colorNames: [String] = {
-        return [String](self.colors.keys)
-    }()
+    var colorNames: [String]!
     
     func generateColorNameArray() -> [String] {
         return [String](self.colors.keys)
@@ -39,21 +37,22 @@ class ColorTableViewController: UITableViewController {
         
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
         colorNames = generateColorNameArray()
+        
+        tableView.registerNib(UINib(nibName: "ColorTableViewCell2", bundle: nil) , forCellReuseIdentifier: "ColorCell2")
     }
 
 
     // MARK: - Segues
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showDetail" {
+        if segue.identifier == "ShowColor" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
+                
+                let controller = segue.destinationViewController as! DetailViewController
                 let colorName = colorNames[indexPath.row]
                 let color = colors[colorName]
                 
                 controller.color = color
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-                controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
     }
@@ -65,13 +64,24 @@ class ColorTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return colorNames.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("ColorCell1", forIndexPath: indexPath)
+        let colorCell = cell as! ColorTableViewCell
+        
+        let colorName = colorNames[indexPath.row]
+
+        colorCell.colorView.backgroundColor = colors[colorName]
+        colorCell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
 
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        performSegueWithIdentifier("ShowColor", sender: self)
     }
 
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
