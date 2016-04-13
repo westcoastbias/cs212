@@ -16,6 +16,7 @@
 		4DE0792A1BE2BF3C007C65AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE079291BE2BF3C007C65AF /* AppDelegate.swift */; };
 		4DE079311BE2BF3C007C65AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DE0792F1BE2BF3C007C65AF /* Main.storyboard */; };
 		4DE079331BE2BF3C007C65AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DE079321BE2BF3C007C65AF /* Assets.xcassets */; };
+		D4EDD1911CBDF10400661F31 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EDD1901CBDF10400661F31 /* MovieTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4DE079301BE2BF3C007C65AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DE079321BE2BF3C007C65AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DE079371BE2BF3C007C65AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4EDD1901CBDF10400661F31 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				00A5A94E1BE2F62B00B54B94 /* MovieListViewController.swift */,
 				4DE0792F1BE2BF3C007C65AF /* Main.storyboard */,
+				D4EDD1901CBDF10400661F31 /* MovieTableViewCell.swift */,
 				4D8B04FD1BE2C76C00CF1A56 /* TheMovieDB */,
 				00A5A9501BE2F75B00B54B94 /* Other */,
 			);
@@ -168,6 +171,7 @@
 				4D8B05091BE2C87800CF1A56 /* TMDBURLs.swift in Sources */,
 				00A5A94F1BE2F62B00B54B94 /* MovieListViewController.swift in Sources */,
 				4D8B05061BE2C87800CF1A56 /* Person.swift in Sources */,
+				D4EDD1911CBDF10400661F31 /* MovieTableViewCell.swift in Sources */,
 				4D8B05051BE2C87800CF1A56 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,7 +13,7 @@ struct TMDB {
     struct Constants {
     
         // MARK: - URLs
-        static let ApiKey = "3c534dc71a2f9d28e9594e5773abcc93"
+        static let ApiKey = "9376812342396029ac6774c87a009a71"
         static let BaseURL = "https://api.themoviedb.org/3/"
         static let BaseImageURL =  "https://image.tmdb.org/t/p/"
     }

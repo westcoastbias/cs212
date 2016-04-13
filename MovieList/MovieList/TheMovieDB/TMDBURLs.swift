@@ -11,8 +11,10 @@ struct TMDBURLs {
 
     // MARK: - URL Helper
         
-    static func URLForResource(var resource: String, var parameters: [String : AnyObject]) -> NSURL {
+    static func URLForResource(resource: String, parameters: [String : AnyObject]) -> NSURL {
         
+        var parameters = parameters
+        var resource: String = resource
         // Add in the API Key
         parameters["api_key"] = TMDB.Constants.ApiKey
         

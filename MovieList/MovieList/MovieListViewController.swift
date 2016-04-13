@@ -35,27 +35,18 @@ class MovieListViewController: UIViewController, UITableViewDataSource, UITableV
 
         let task = NSURLSession.sharedSession().dataTaskWithURL(url) { data, response, error in
             
-            if let error = error {
-                print(error)
-                return
-            }
-            
-            dispatch_async(self.serialQueue) {
-                
-                self.task = nil
-                
-                // Error
-                if let error = error {print(error);return}
+            // Error
+            if let error = error {print(error);return}
 
-                // Data
-                if let data = data {
-                    self.movies = self.moviesFromData(data)
+            // Data
+            if let data = data {
+               self.movies = self.moviesFromData(data)
             
-                    dispatch_async(dispatch_get_main_queue()) {
-                        self.tableView.reloadData()
-                    }
-                }
+               dispatch_async(dispatch_get_main_queue()) {
+                   self.tableView.reloadData()
+               }
             }
+            
         }
         
         return task
@@ -108,13 +99,49 @@ class MovieListViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell")!
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! MovieTableViewCell
         
-        let movie = movies[indexPath.row]
+        var movie = movies[indexPath.row]
         
         cell.textLabel!.text = movie.title
-        cell.imageView!.image = UIImage(named: "placeHolder")
         
+        if movie.posterPath == nil {
+            cell.imageView!.image = UIImage(named: "noImage")
+        }
+        //set placeholder for image
+        
+        else if let image = movie.posterImage {
+        cell.imageView!.image = image
+        } else {
+            cell.imageView!.image = UIImage(named: "placeHolder")
+        
+            //start downloading image
+            //get url
+            let url = TMDBURLs.URLForPosterWithPath(movie.posterPath!)
+            //create task
+            let task = NSURLSession.sharedSession().dataTaskWithURL(url) {
+                
+                data, response, error in
+
+                if let error = error {
+                    print(error)
+                }
+                
+                //turn data into image
+                if let data = data {
+                    let image = UIImage(data: data)
+                    movie.posterImage = image
+                    dispatch_async(dispatch_get_main_queue()) {
+                    //set image as cell imageView
+                    cell.imageView!.image = image
+                    }
+                }
+            }
+            //resume task
+            print(cell.cellNumber)
+            cell.task = task
+            task.resume()
+        }
         return cell
     }
     
@@ -131,8 +158,25 @@ class MovieListViewController: UIViewController, UITableViewDataSource, UITableV
         }
         
         // Print the object, for now, so we can take a look
-        print(JSONDictionary)
+        let movieDictionaries = JSONDictionary["results"] as! [[String: AnyObject]]
         
-        return [Movie]()
+        var movies = [Movie]()
+        
+        for d in movieDictionaries {
+            movies.append(Movie(dictionary: d))
+        }
+        
+        /**
+            the for/in could also be written as
+        movies = movieDictionaries.map() { Movie(dictionary: $0) }
+        
+        or
+        
+        movies = movieDictionaries.map({
+            d in return Movie(dictionary: d)
+        })
+        */
+        
+        return movies
     }
 }
